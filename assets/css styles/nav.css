@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #f8f9fa;
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+.nav-links{
+  flex-grow: 1;
+  align-items: center;
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul {
+  padding: 0;
+  margin: 0;
+}
+.nav-links li{
+  display: inline-block;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.nav-links li a{
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3 ease 0s;
+  -webkit-transition: all 0.3 ease 0s;
+  -moz-transition: all 0.3 ease 0s;
+  -ms-transition: all 0.3 ease 0s;
+  -o-transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover{
+  color: blue !important;
+}
+
+.text-logo{
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  white-space: nowrap;
+}
+
+.text-logo span{
+  color: #054ADA;
+  text-decoration: underline;
+}
+.text-logo a{
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.toggle-menu {
+  display: none !important;
+  
+}
+
+.header-btn{
+  padding: 10px 24px;
+  cursor: pointer;
+  background-color:#054ADA;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 0.3 ease 0s;
+  -webkit-transition: all 0.3 ease 0s;
+  -moz-transition: all 0.3 ease 0s;
+  -ms-transition: all 0.3 ease 0s;
+  -o-transition: all 0.3 ease 0s;
+}
+
+.header-btn:hover{
+  background-color: #174EA6;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    width: 100% !important;
+
+  /* Hide the header button on mobile */
+  .header-btn {
+    display: none;
+  }
+
+  /* Hide the navigation links by default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 22px;
+    z-index: 1;
+    white-space: nowrap;
+  }
+  
+  .navbar {
+    background-color: #000;
+  }
+
+
+  .nav-links li {
+    display: block;
+    width: 60%;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background-color: red !important;
+  }
+
+  /* Display the toggle menu icon */
+  .toggle-menu {
+    display: block !important;
+    color: #054ADA;
+  }
+}
+
+/* Show the menu when toggled */
+.nav-links.active {
+  display: flex;
+}
+
+
+.insert-menu {
+  width: 100%;
+}
+
+
+}

@@ -1,0 +1,126 @@
+/* CSS for the footer Section */
+footer{
+  background-color: #222222;
+  padding: 20px;
+  margin-top: 0px;
+  color: #fff !important;
+}
+
+
+.row-footer{
+  padding: 80px 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+.col-footer{
+  flex-basis: 25%;
+  padding: 0 10px;
+}
+
+
+.col-footer:first-child {
+  align-self: center;
+}
+
+.col-footer h6{
+  color: #fff;
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+}
+
+
+.col-footer p{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+.footer-links{
+  list-style: none;
+  padding: 0;
+}
+
+
+.footer-links li{
+  margin-bottom: 8px;
+}
+
+
+.footer-links a{
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+
+.bottom-footer-bar{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+
+/* Social Media Icons Styling */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 20px; 
+  color: #fff; 
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color and scaling */
+}
+
+.social-icon:hover {
+  color: #007BFF; 
+  transform: scale(1.1);
+}
+
+/* Footer Media query for smaller screens */
+@media screen and (max-width: 768px){
+  .row-footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-footer{
+    flex-basis: 25%;
+    padding: 20px 0px;
+  }
+
+  .col-footer:last-child{
+    padding-bottom: 5px;
+  }
+
+  .footer-links li:last-child{
+    margin-bottom: 2px;
+  }
+
+  .col-footer h6{
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  .bottom-footer-bar{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
+}
